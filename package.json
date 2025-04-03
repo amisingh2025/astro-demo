@@ -1,0 +1,18 @@
+{
+  "name": "demo-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.17",
+    "astro": "^5.4.3",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^4.0.17"
+  }
+}
