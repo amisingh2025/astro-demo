@@ -1,0 +1,107 @@
+---
+import Data from '../data/cards.json';
+import Card from './Cards.astro'
+---
+<!-- Carousel Section -->
+<div class="w-full mx-0 mb-20">
+    <section class="slick-container">
+    <div class="slick-slider flex">
+            {
+                Data.map((card) => {
+                    return (
+                        <div class="slick slider-img">
+                        <Card
+                            image={card?.image}
+                            heading={card?.heading}
+                            description={card?.description}
+                            link={card?.link}
+                            button={card?.button}
+                            isHorizontal={true}
+                        />
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </section>
+</div>
+<!-- Import Slick Carousel CSS -->
+<style is:global>
+   @import '../../node_modules/slick-carousel/slick/slick.css';
+   @import '../../node_modules/slick-carousel/slick/slick-theme.css';
+
+    .slider-img{
+        display: flex !important;
+        min-height: 100%;
+    }
+    
+    .slick-container .slick-slide {
+        display: inline-flex;
+        width: 100%;
+        min-height: 330px;
+        padding: 0 8px;
+	    box-sizing: border-box;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+   
+    .slick-slide img {
+        display: block;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .card-x {
+        display: flex;
+    }
+    
+    .slick-prev{
+        left: 45%;
+    }
+    
+    .slick-next {
+        right: 45%;
+    }
+    
+    .slick-prev,
+    .slick-next {
+        bottom: -80px;
+        margin: auto;
+        top: auto;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: blue;
+        padding:10px
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+        font-weight: 600;
+    }
+</style>
+
+
+<!-- Load the Slick Carousel JS and Initialize It -->
+<script type="module">
+   import "../../node_modules/jquery/dist/jquery"
+   import "../../node_modules/slick-carousel/slick/slick.js";
+   
+   
+   document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector('.slick-slider');
+    if (slider) {
+      $(slider).slick({
+        autoplay: false,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      });
+    }
+   });
+</script>

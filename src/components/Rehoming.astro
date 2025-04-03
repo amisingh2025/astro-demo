@@ -1,0 +1,35 @@
+---
+import Data from '../data/cards.json';
+import Card from './Cards.astro';
+---
+
+<div class="rehoming-blog w-full bg-stone-100">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <h2 class=" font-medium text-2xl my-1.5 uppercase">Rehoming with Battersea</h2>
+        <div class="grid md:grid-cols-4 gap-3">
+            {
+                Data.map((card) => {
+                    return (
+                        <Card
+                            image={card?.image}
+                            heading={card?.heading}
+                            description={card?.description}
+                            link={card?.link}
+                            button={card?.button}
+                            isHorizontal={false}
+                        />
+                    );
+                })
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .descrition{
+        max-height: 240px;
+        min-height: 240px;
+    }
+
+</style>

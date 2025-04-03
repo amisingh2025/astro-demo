@@ -1,0 +1,35 @@
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+export  interface Props {
+	title?: string;
+}
+const {title = 'Battersea Dogs & Cats Home | Here For Every Dog And Cat'} = Astro.props as Props;
+---
+<!doctype html>
+<html lang="en" data-astro-cid-sckkx6r4="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Battersea Is Here For Every Dog And Cat, And Has Been Since 1860. We Believe That Every Dog And Cat Deserves The Best.">
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navigation />
+		<main class="w-full tems-center justify-between mx-auto">
+			<slot />
+		</main>
+		<Footer/>
+	</body>
+</html>
+
+<style>
+	html,body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

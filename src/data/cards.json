@@ -1,0 +1,63 @@
+[
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-06/Promo%202%20-%20What%20we%20do.jpg.webp?itok=bA2U1P5h",
+      "heading": "Welcome to Our Website!",
+      "description": "This is a short description about the website. Explore and learn more about what we offer.",
+      "link": "https://example.com/about",
+      "button": {
+        "text": "Learn More",
+        "action": "https://example.com/about"
+      }
+    },
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-02/Battersea%20vet%20working%20with%20a%20vet%20from%20Jai%20Dog%20-%20fixed%20width.jpg.webp?itok=szMAlbXi",
+      "heading": "Discover Our Services",
+      "description": "Learn more about the amazing services we offer to help you succeed.",
+      "link": "https://example.com/services",
+      "button": {
+        "text": "Explore Services",
+        "action": "https://example.com/services"
+      }
+    },
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-06/Husky%20sitting%20on%20the%20grass%20with%20Battersea%20campaigning%20staff%20and%20dogs.png.webp?itok=TVrwRCuO",
+      "heading": "Join Our Community",
+      "description": "Be a part of our growing community and access exclusive content.",
+      "link": "https://example.com/community",
+      "button": {
+        "text": "Join Now",
+        "action": "https://example.com/community"
+      }
+    },
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-02/Cat%20being%20scanned%20by%20a%20vet%20banner%20-%20fixed%20width.jpg.webp?itok=VGHPEL0X",
+      "heading": "Start Your Journey Today",
+      "description": "Get started with our platform and discover a wealth of resources.",
+      "link": "https://example.com/start",
+      "button": {
+        "text": "Get Started",
+        "action": "https://example.com/start"
+      }
+    },
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-02/Cat%20being%20scanned%20by%20a%20vet%20banner%20-%20fixed%20width.jpg.webp?itok=VGHPEL0X",
+      "heading": "Browse Our Blog",
+      "description": "Stay up to date with the latest trends, tutorials, and insights.",
+      "link": "https://example.com/blog",
+      "button": {
+        "text": "Visit Blog",
+        "action": "https://example.com/blog"
+      }
+    },
+    {
+      "image": "https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-02/Couple%20teaching%20their%20dog%20to%20sit%20-%20fixed%20width.jpg.webp?itok=ocR_7cB1",
+      "heading": "Contact Us",
+      "description": "Have questions or feedback? Get in touch with our team.",
+      "link": "https://example.com/contact",
+      "button": {
+        "text": "Contact Us",
+        "action": "https://example.com/contact"
+      }
+    }
+  ]
+  
